@@ -1,11 +1,11 @@
 [gd_scene format=3 uid="uid://db2h3t17k37pe"]
 
-[ext_resource type="Script" uid="uid://dbkfoixqj2gtu" path="res://Scripts/Player.gd" id="1_1d73w"]
-[ext_resource type="Material" uid="uid://b4s0xnt1f6lia" path="res://Materials/Green.tres" id="1_o5nrg"]
-[ext_resource type="Material" uid="uid://bi1h4xe7msjwi" path="res://Materials/Pink.tres" id="3_irgfk"]
-[ext_resource type="Material" uid="uid://b122sws3pt7w7" path="res://Materials/Red.tres" id="4_nuwel"]
-[ext_resource type="Material" uid="uid://p2nkjd3ge3qm" path="res://Materials/Blue.tres" id="5_te4rd"]
-[ext_resource type="Texture2D" uid="uid://n3b5tkdvnp1o" path="res://icon.svg" id="6_45d1s"]
+[ext_resource type="Material" uid="uid://bi1h4xe7msjwi" path="res://Materials/Pink.tres" id="1_qfnet"]
+[ext_resource type="Material" uid="uid://b122sws3pt7w7" path="res://Materials/Red.tres" id="2_i7141"]
+[ext_resource type="Material" uid="uid://p2nkjd3ge3qm" path="res://Materials/Blue.tres" id="3_4mrxx"]
+[ext_resource type="Material" uid="uid://b4s0xnt1f6lia" path="res://Materials/Green.tres" id="4_7r4gi"]
+[ext_resource type="Script" uid="uid://dbkfoixqj2gtu" path="res://Scripts/Player.gd" id="5_w7kh3"]
+[ext_resource type="Texture2D" uid="uid://n3b5tkdvnp1o" path="res://icon.svg" id="6_e3hyu"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_5lq0h"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -36,41 +36,41 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 8.878646)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 29.3824)
 use_collision = true
 size = Vector3(52.4636, 5.83948, 1)
-material = ExtResource("3_irgfk")
+material = ExtResource("1_qfnet")
 
 [node name="CSGBox3D4" type="CSGBox3D" parent="Map" unique_id=1087142662]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -20.708008, 0, 0.38237423)
-material_override = ExtResource("3_irgfk")
+material_override = ExtResource("1_qfnet")
 use_collision = true
 size = Vector3(60, 5.83948, 11.583984)
 
 [node name="CSGBox3D5" type="CSGBox3D" parent="Map" unique_id=1192897078]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 26, 0, 0.382374)
-material_override = ExtResource("3_irgfk")
+material_override = ExtResource("1_qfnet")
 use_collision = true
 size = Vector3(60, 5.83948, 1)
 
 [node name="CSGBox3D6" type="CSGBox3D" parent="Map" unique_id=1343325447]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 9.380491, -0.66312695, 1.8000348)
-material_override = ExtResource("4_nuwel")
+material_override = ExtResource("2_i7141")
 use_collision = true
 size = Vector3(4, 5.83948, 4)
 
 [node name="CSGBox3D7" type="CSGBox3D" parent="Map" unique_id=595350411]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 12, -0.66116047, 8.214374)
-material_override = ExtResource("5_te4rd")
+material_override = ExtResource("3_4mrxx")
 use_collision = true
 size = Vector3(4, 5.83948, 4)
 
 [node name="CSGBox3D8" type="CSGBox3D" parent="Map" unique_id=655968371]
 transform = Transform3D(-4.3657e-08, 2.17999e-09, -1, 0.049872346, 0.9987555, 0, 0.9987555, -0.049872346, -4.37114e-08, 5.409094, -2.1565218, 6.9925346)
-material_override = ExtResource("4_nuwel")
+material_override = ExtResource("2_i7141")
 use_collision = true
 size = Vector3(4, 14.293823, 4)
 
 [node name="CSGBox3D" type="CSGBox3D" parent="Map" unique_id=1214532484]
 transform = Transform3D(1.0067363, 0, 0, 0, 1.0067363, 0, 0, 0, 1.0067363, -0.17112947, 0.12090492, -0.00703907)
-material_override = ExtResource("1_o5nrg")
+material_override = ExtResource("4_7r4gi")
 use_collision = true
 size = Vector3(52.2363, 0.002, 59.575)
 
@@ -91,7 +91,7 @@ material_override = SubResource("StandardMaterial3D_fwsoe")
 size = Vector3(15.673828, 1, 1)
 
 [node name="Player" type="CharacterBody3D" parent="." unique_id=1608742849]
-script = ExtResource("1_1d73w")
+script = ExtResource("5_w7kh3")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Player" unique_id=1146709075]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
@@ -108,4 +108,4 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.67939, 0)
 
 [node name="Sprite3D" type="Sprite3D" parent="." unique_id=1422325378]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3684187, 2.6477582, 6.3130293)
-texture = ExtResource("6_45d1s")
+texture = ExtResource("6_e3hyu")
