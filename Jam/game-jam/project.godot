@@ -14,6 +14,10 @@ config/name="GameJam"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+SceneTransition="*uid://bp6cmerdu8yd3"
+
 [display]
 
 window/stretch/mode="canvas_items"
