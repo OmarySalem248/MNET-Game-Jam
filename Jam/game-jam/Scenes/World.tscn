@@ -69,7 +69,7 @@ use_collision = true
 size = Vector3(4, 14.293823, 4)
 
 [node name="CSGBox3D" type="CSGBox3D" parent="Map" unique_id=1214532484]
-transform = Transform3D(1.0067363, 0, 0, 0, 1.0067363, 0, 0, 0, 1.0067363, -0.16624069, 0.12090492, -0.011069775)
+transform = Transform3D(1.0067363, 0, 0, 0, 1.0067363, 0, 0, 0, 1.0067363, -0.17112947, 0.12090492, -0.00703907)
 material_override = ExtResource("1_o5nrg")
 use_collision = true
 size = Vector3(52.2363, 0.002, 59.575)
