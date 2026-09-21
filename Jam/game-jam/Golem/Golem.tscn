@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://cjnap8otwvohy"]
+
+[ext_resource type="Texture2D" uid="uid://1c7uwhxh0v0q" path="res://icon.svg" id="1_1553q"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2av32"]
+resource_local_to_scene = true
+albedo_texture = ExtResource("1_1553q")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_k1645"]
+material = SubResource("StandardMaterial3D_2av32")
+size = Vector2(0.2, 0.2)
+
+[node name="Golem" type="Node3D" unique_id=869087453]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1728919245]
+transform = Transform3D(1, 0, 0, 0, 0.92718387, -0.3746066, 0, 0.3746066, 0.92718387, 0, 0, 0)
+mesh = SubResource("PlaneMesh_k1645")
+
+[node name="SubViewport" type="SubViewport" parent="." unique_id=885384666]
+transparent_bg = true
+size = Vector2i(128, 128)
+
+[node name="Node2D" type="Node2D" parent="SubViewport" unique_id=1186390949]
+
+[node name="Sprite2D" type="Sprite2D" parent="SubViewport/Node2D" unique_id=1588855678]
+position = Vector2(64, 64)
+texture = ExtResource("1_1553q")
+
+[node name="Camera2D" type="Camera2D" parent="SubViewport/Node2D" unique_id=2133522022]
