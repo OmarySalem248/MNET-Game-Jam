@@ -6,6 +6,12 @@ const SPRINT_SPEED = 8.0
 const JUMP_VELOCITY = 7
 const SENSITIVITY = 0.004
 
+# Sprint variables
+const SPRINT_TIMEOUT = 0.2
+var sprint_dir : Vector2 = Vector2(0.0,0.0)
+var sprint_timer : Timer
+var sprinting : bool = false
+
 #bob variables
 const BOB_FREQ = 2.4
 const BOB_AMP = 0.08
@@ -23,6 +29,9 @@ var gravity = 9.8
 
 
 func _ready():
+	sprint_timer = Timer.new()
+	add_child(sprint_timer)
+	
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 
 
@@ -43,14 +52,14 @@ func _physics_process(delta):
 		velocity.y = JUMP_VELOCITY
 	
 	# Handle Sprint.
-	if Input.is_action_pressed("sprint"):
+	if Input.is_action_pressed("sprint") or sprinting:
 		speed = SPRINT_SPEED
 	else:
 		speed = WALK_SPEED
 
 	# Get the input direction and handle the movement/deceleration.
-	var input_dir = Input.get_vector("left", "right", "up", "down")
-	var direction = (head.transform.basis * transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
+	var input_dir : Vector2 = Input.get_vector("left", "right", "up", "down")
+	var direction : Vector3 = (head.transform.basis * transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
 	if is_on_floor():
 		if direction:
 			velocity.x = direction.x * speed

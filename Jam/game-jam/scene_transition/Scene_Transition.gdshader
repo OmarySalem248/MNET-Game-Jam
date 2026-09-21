@@ -11,7 +11,7 @@ void vertex() {
 }
 
 void fragment() {
-	if (texture(noise,vec2((UV.x/10.0),UV.y/10.0)).r < t){
+	if (texture(noise,vec2(((float(int(UV.x*30.0)))/300.0),UV.y/10.0)).r < t){
 		COLOR.a = 1.0;
 	}
 	else{
