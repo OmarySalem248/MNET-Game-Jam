@@ -1,3 +1,6 @@
 [gd_scene format=3 uid="uid://dokcgiyjtareu"]
 
+[ext_resource type="Script" uid="uid://chl4wxvggwpwk" path="res://Village/Villagers/villager.gd" id="1_7wdml"]
+
 [node name="Villagers" type="Node3D" unique_id=1065641915]
+script = ExtResource("1_7wdml")

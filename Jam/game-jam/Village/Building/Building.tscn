@@ -1,17 +1,11 @@
 [gd_scene format=3 uid="uid://b1eyo8gu1kq5h"]
 
 [ext_resource type="Script" uid="uid://chcug4xck0l5r" path="res://Village/Building/Building.gd" id="1_1bded"]
-
-[sub_resource type="ImageTexture" id="ImageTexture_28rqi"]
+[ext_resource type="Texture2D" uid="uid://1c7uwhxh0v0q" path="res://icon.svg" id="2_28rqi"]
 
 [node name="Building" type="Node3D" unique_id=1670483972]
 script = ExtResource("1_1bded")
 
 [node name="Sprite3D" type="Sprite3D" parent="." unique_id=1338985557]
-transform = Transform3D(1, 0, 0, 0, -0.90317774, 0.4292668, 0, -0.4292668, -0.90317774, 0, 0, 0)
-texture = SubResource("ImageTexture_28rqi")
-
-[node name="ColorRect" type="ColorRect" parent="Sprite3D" unique_id=186801849]
-offset_right = 1906.0
-offset_bottom = 1078.0
-color = Color(0.26666668, 0.73333335, 0.6862745, 1)
+transform = Transform3D(-0.90423137, 0, 0, 0, 0.56274307, 1.3360676, 0, -0.46017668, 1.6338563, 0, 0, 0)
+texture = ExtResource("2_28rqi")

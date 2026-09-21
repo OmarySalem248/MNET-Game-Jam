@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://dvc5t4p7u72s0"]
+
+[ext_resource type="Script" uid="uid://drk7rhln7i1mt" path="res://Village/Building/BlackSmith/Smith.gd" id="1_yy4lk"]
+
+[node name="BlackSmith" type="Node3D" unique_id=1246861753]
+script = ExtResource("1_yy4lk")

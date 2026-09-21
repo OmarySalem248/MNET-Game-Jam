@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://5ext07hklqrm"]
+
+[ext_resource type="Texture2D" uid="uid://1c7uwhxh0v0q" path="res://icon.svg" id="1_6w04u"]
+[ext_resource type="Script" uid="uid://cn5y2gt5qncen" path="res://Village/Building/Storage/storage.gd" id="1_10hrl"]
+
+[node name="Storage" type="Node3D" unique_id=136544810]
+script = ExtResource("1_10hrl")
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=750647517]
+transform = Transform3D(1, 0, 0, 0, 0.81400347, 0.58086, 0, -0.58086, 0.81400347, 0, 0, 0)
+texture = ExtResource("1_6w04u")
