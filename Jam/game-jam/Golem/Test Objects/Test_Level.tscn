@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://dlhlyvvi6y030"]
+
+[ext_resource type="Script" uid="uid://dx3nruwrnqu0k" path="res://Golem/Golem_Interactions.gd" id="1_is3mh"]
+[ext_resource type="Script" uid="uid://csjrmffmi22hk" path="res://Golem/Test Objects/Bucket.gd" id="2_30d1a"]
+[ext_resource type="Script" uid="uid://do1cphbp5kb6r" path="res://Golem/Test Objects/pot.gd" id="3_e2g3u"]
+[ext_resource type="Script" uid="uid://cab7iuy82jwe7" path="res://Golem/Golem_Rig.gd" id="3_vbq46"]
+[ext_resource type="Script" uid="uid://ch2vlajxjq1ch" path="res://Golem/Golem_Actions.gd" id="4_xye8m"]
+[ext_resource type="Script" uid="uid://bo63mgboddxn4" path="res://Golem/Golem_Movement.gd" id="5_f5nvr"]
+[ext_resource type="Script" uid="uid://bh4cuifolxpug" path="res://Golem/Test Objects/Test_UI.gd" id="5_j388x"]
+
+[node name="TestLevel" type="Node2D" unique_id=245546660]
+script = ExtResource("1_is3mh")
+
+[node name="Rig" type="Node2D" parent="." unique_id=1044819088]
+script = ExtResource("3_vbq46")
+
+[node name="Movement" type="Node2D" parent="." unique_id=2017366864]
+script = ExtResource("5_f5nvr")
+
+[node name="Actions" type="Node2D" parent="." unique_id=503320277]
+script = ExtResource("4_xye8m")
+
+[node name="Interaction" type="Node2D" parent="." unique_id=398190955]
+script = ExtResource("1_is3mh")
+
+[node name="Bucket" type="Node2D" parent="." unique_id=1115424926]
+script = ExtResource("2_30d1a")
+
+[node name="Pot" type="Node2D" parent="." unique_id=871271048]
+script = ExtResource("3_e2g3u")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=56778207]
+script = ExtResource("5_j388x")

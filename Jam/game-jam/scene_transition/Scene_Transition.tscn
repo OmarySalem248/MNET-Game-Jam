@@ -1,6 +1,9 @@
 [gd_scene format=3 uid="uid://bp6cmerdu8yd3"]
 
+<<<<<<< HEAD
 [ext_resource type="Script" uid="uid://dnpakel1bacd" path="res://scene_transition/scene_transition.gd" id="1_36olp"]
+=======
+>>>>>>> Ads
 [ext_resource type="Shader" uid="uid://ci3aj175hof10" path="res://scene_transition/Scene_Transition.gdshader" id="2_458lt"]
 
 [sub_resource type="FastNoiseLite" id="FastNoiseLite_qj8bl"]
@@ -112,7 +115,6 @@ _data = {
 }
 
 [node name="SceneTransition" type="CanvasLayer" unique_id=1364660006]
-script = ExtResource("1_36olp")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=485893648]
 material = SubResource("ShaderMaterial_36olp")
