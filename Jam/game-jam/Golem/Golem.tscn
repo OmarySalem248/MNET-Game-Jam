@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://cjnap8otwvohy"]
+
+[ext_resource type="Texture2D" uid="uid://1c7uwhxh0v0q" path="res://icon.svg" id="1_1553q"]
+
+[node name="Golem" type="Node3D" unique_id=869087453]
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=954599364]
+transform = Transform3D(0.5, 0, 0, 0, 0.2347358, 0.44147378, 0, -0.44147378, 0.2347358, 0, 0, 0)
+texture = ExtResource("1_1553q")
