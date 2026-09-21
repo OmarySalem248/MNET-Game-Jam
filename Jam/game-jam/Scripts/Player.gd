@@ -3,7 +3,7 @@ extends CharacterBody3D
 var speed
 const WALK_SPEED = 5.0
 const SPRINT_SPEED = 8.0
-const JUMP_VELOCITY = 7
+const JUMP_VELOCITY = 4.8
 const SENSITIVITY = 0.004
 
 #bob variables
@@ -19,18 +19,13 @@ const FOV_CHANGE = 1.5
 var gravity = 9.8
 
 @onready var head = $Head
-@onready var camera = $Head/Camera3D
+
 
 
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 
 
-func _unhandled_input(event):
-	if event is InputEventMouseMotion:
-		head.rotate_y(-event.relative.x * SENSITIVITY)
-		camera.rotate_x(-event.relative.y * SENSITIVITY)
-		camera.rotation.x = clamp(camera.rotation.x, deg_to_rad(-40), deg_to_rad(60))
 
 
 func _physics_process(delta):
@@ -63,13 +58,10 @@ func _physics_process(delta):
 		velocity.z = lerp(velocity.z, direction.z * speed, delta * 3.0)
 	
 	# Head bob
-	t_bob += delta * velocity.length() * float(is_on_floor())
-	camera.transform.origin = _headbob(t_bob)
+
 	
-	# FOV
-	var velocity_clamped = clamp(velocity.length(), 0.5, SPRINT_SPEED * 2)
-	var target_fov = BASE_FOV + FOV_CHANGE * velocity_clamped
-	camera.fov = lerp(camera.fov, target_fov, delta * 8.0)
+
+	
 	
 	move_and_slide()
 

@@ -118,6 +118,7 @@ script = ExtResource("1_36olp")
 material = SubResource("ShaderMaterial_36olp")
 offset_right = 1152.0
 offset_bottom = 648.0
+mouse_filter = 2
 color = Color(0, 0, 0, 1)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="ColorRect" unique_id=1168267024]

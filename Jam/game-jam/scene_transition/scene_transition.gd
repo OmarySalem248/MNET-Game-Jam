@@ -2,7 +2,7 @@ extends CanvasLayer
 
 @onready var animator : AnimationPlayer = get_node("ColorRect/AnimationPlayer")
 @onready var rect : ColorRect = get_node("ColorRect")
-var targ = "res://scenes/levels/1.tscn"
+var targ = "res://scenes/world.tscn"
 
 func change_to_scene(target : String):
 	visible = true

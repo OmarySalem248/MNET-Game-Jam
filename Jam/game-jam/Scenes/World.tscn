@@ -90,6 +90,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.096494, 2.0959864, -4.95417
 material_override = SubResource("StandardMaterial3D_fwsoe")
 size = Vector3(15.673828, 1, 1)
 
+[node name="Camera3D" type="Camera3D" parent="Map" unique_id=399457429]
+transform = Transform3D(-0.98986256, -0.14202854, 0, -0.13718903, 0.9561338, -0.25881913, 0.036759704, -0.25619537, -0.9659258, 0, 27.663376, 0)
+
 [node name="Player" type="CharacterBody3D" parent="." unique_id=1608742849]
 script = ExtResource("5_w7kh3")
 
@@ -103,8 +106,6 @@ shape = SubResource("CapsuleShape3D_wydro")
 
 [node name="Head" type="Node3D" parent="Player" unique_id=1865628993]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.67939, 0)
-
-[node name="Camera3D" type="Camera3D" parent="Player/Head" unique_id=1283867669]
 
 [node name="Sprite3D" type="Sprite3D" parent="." unique_id=1422325378]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3684187, 2.6477582, 6.3130293)
