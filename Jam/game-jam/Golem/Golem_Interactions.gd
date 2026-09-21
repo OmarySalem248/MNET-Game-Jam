@@ -152,6 +152,11 @@ func check_condition(condition: String) -> bool:
 				"Unknown condition: %s"
 				% condition
 			)
+			if interactions.check_condition("facing_object"):
+	var result = interactions.interact("chop")
+	if result.hit and result.result.get("chopped_down", false):
+		var wood: int = result.result.wood
+		# hand wood to inventory here
 
 			return false
 

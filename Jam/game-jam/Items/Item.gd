@@ -12,5 +12,6 @@ extends Resource
 enum ItemType {
 	ORE,
 	INGOT,
+	WOOD,
 	MISC
 }
