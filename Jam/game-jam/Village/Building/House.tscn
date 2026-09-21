@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://cfj3c44jibtx7"]
+
+[ext_resource type="Script" uid="uid://b21ssduhkwsc2" path="res://Village/Building/house.gd" id="1_axxai"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_axxai"]
+albedo_color = Color(1, 1, 0.14509805, 1)
+
+[node name="House" type="Node3D" unique_id=1432518249]
+script = ExtResource("1_axxai")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=1215480410]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.50605243, 0)
+material_override = SubResource("StandardMaterial3D_axxai")

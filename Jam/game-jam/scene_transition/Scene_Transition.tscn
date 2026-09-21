@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bp6cmerdu8yd3"]
 
-[ext_resource type="Script" uid="uid://df0jf10it0krp" path="res://scene_transition/scene_transition.gd" id="1_36olp"]
-[ext_resource type="Shader" uid="uid://bnu17xqqfm1vc" path="res://scene_transition/Scene_Transition.gdshader" id="2_458lt"]
+[ext_resource type="Script" uid="uid://dnpakel1bacd" path="res://scene_transition/scene_transition.gd" id="1_36olp"]
+[ext_resource type="Shader" uid="uid://ci3aj175hof10" path="res://scene_transition/Scene_Transition.gdshader" id="2_458lt"]
 
 [sub_resource type="FastNoiseLite" id="FastNoiseLite_qj8bl"]
 noise_type = 2
