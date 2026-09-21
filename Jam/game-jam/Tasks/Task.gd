@@ -1,15 +1,5 @@
 extends Node
-class_name Building
 
-@export var building_type: BuildingType = BuildingType.GENERIC
-
-
-enum BuildingType {
-	GENERIC,
-	HOUSE,
-	STORAGE,
-	SMITH
-}
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:

@@ -1,12 +1,16 @@
-extends Node
 class_name Item
+extends Resource
 
 
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
+@export var id: StringName = &""
+@export var name: String = ""
+@export var icon: Texture2D
+@export var value: int = 0
+@export var item_type: ItemType = ItemType.MISC
+@export var is_quest_item: bool = false
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
+enum ItemType {
+	ORE,
+	INGOT,
+	MISC
+}

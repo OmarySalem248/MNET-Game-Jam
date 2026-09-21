@@ -1,11 +1,10 @@
 extends Item
 class_name Ingot
 
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
+@export var ingot_type: IngotType = IngotType.Misc
+
+enum IngotType { Misc, IRON, GOLD }
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
+func _init() -> void:
+	item_type = ItemType.INGOT
