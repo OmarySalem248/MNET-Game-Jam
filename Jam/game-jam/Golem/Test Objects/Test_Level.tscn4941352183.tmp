@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://dlhlyvvi6y030"]
+
+[ext_resource type="Script" uid="uid://bh4cuifolxpug" path="res://Golem/Test Objects/Test_UI.gd" id="1_30d1a"]
+[ext_resource type="PackedScene" uid="uid://cjnap8otwvohy" path="res://Golem/Golem.tscn" id="2_30d1a"]
+[ext_resource type="Script" uid="uid://cab7iuy82jwe7" path="res://Golem/Golem_Rig.gd" id="3_e2g3u"]
+
+[node name="TestLevel" type="Node2D" unique_id=245546660]
+script = ExtResource("1_30d1a")
+
+[node name="Golem" parent="." unique_id=869087453 instance=ExtResource("2_30d1a")]
+script = ExtResource("3_e2g3u")
